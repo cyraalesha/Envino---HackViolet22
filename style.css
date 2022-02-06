@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap');
+
+*{
+  color: #fff;
+  font-family: Nunito;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(230, 227, 227);
+}
+.section1 {
+  background: url(imgs/whitesmoke.png) no-repeat, #135F64 ;
+  background-position: bottom;
+  padding-bottom: 130px;
+  color: #fff;
+}
+
+.section2 {
+  margin: -90px 0px -90px 0px;
+  background-color: #fff;
+}
+
+.section3 {
+  margin-top: 100px;
+  background-color: #135F64;
+}
+
+.featuretitle {
+  color: #007B67;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  margin: 0;
+  background-color: #135F64 ;
+  /*background-color: #135F64;*/
+  font-family: Nunito;
+  overflow-y: scroll;
+  color: #fff;
+}
+
+/* nav bar css start */
+
+nav {
+  top: 0px;
+  margin-left: 0%;
+  margin-right: 0%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 29px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: auto; 
+  margin-right: 20px;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  padding: 1.5em;
+}
+
+/* nav bar css ends */
+
+/* body css starts */
+.maindiv {
+  padding-left: 130px;
+  margin-top: -40px;
+  display: flex;
+  
+}
+
+.globe {
+  width: 36%;
+  height: 30%;
+  margin-left: 480px;
+  margin-top: 90px;
+}
+
+.titlename {
+  font-size: 100px;
+  margin-bottom: -30px;
+  font-family: Nunito;
+  margin-left: -3px;
+}
+
+.slogan {
+  font-size: 30px;
+  font-family: Nunito;
+}
+
+.startbttn {
+  background-color: #55B2AB;
+  border: 0px;
+  padding: 25px 40px 25px 40px;
+  border-radius: 15px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.startbttn:hover {
+  background-color: rgb(153, 212, 207);
+  cursor: pointer;
+}
+/* body css starts */
+
+/* feature cards css starts */
+.row {
+  display: flex;
+
+}
+.card {
+  color: #000;
+  background-color: #55B2AB;
+  margin: 20px 100px;
+  padding: 40px;
+  max-width: 40%;
+  max-height: 30%;
+  margin-top: 0;
+  border-radius: 20px;
+}
+
+
+/* feature cards css ends */
+
+/* scan section css starts */
+
+.camera-div {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.cam-h2, .cam-p {
+  display: flex;
+  justify-content: center;
+}
+
+.camera {
+  background-color: #C4C4C4;
+  margin: 50px 120px;
+  padding: 150px;
+  border-radius: 20px;
+
+}
+
+.cam-card {
+  color: #474242;
+  background-color: #fff;
+  margin: 30px 50px;
+  padding: 30px;
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 20px;
+}
+
+
+.pic {
+  margin: -20px -20px 0px -20px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+h3 {
+  color: #090F47;
+}
+
+
+/* scan section css ends */
+
+
+/* brand spotlight css starts */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > * {
+    margin: 5px;
+  }
+}
+
+.media {
+  color: #151E3F;
+  padding: 10px;
+  margin: 30px;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5px;
+  height: 70%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+}
+
+p {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing:1px;
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+    display: block;
+    > * {
+      margin: 10px;
+    }
+  }
+}
+
+.brands-title {
+  display: flex;
+  justify-content: center;
+}
+
+.brand-pic {
+  max-height: 200px;
+  max-width: 300px;
+  object-fit: cover;
+}
+/* brand spotlight css ends */
