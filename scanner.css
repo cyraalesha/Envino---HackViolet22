@@ -1,0 +1,25 @@
+img {
+  display: none;
+}
+
+img {
+  width: 40%
+}
+
+.cam-card {
+  color: #474242;
+  margin: 50px 50px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.row {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="donation.css" />
+
+		<script defer src="donation.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="./school.svg" type="image/x-icon" />
+	</head>
+	<body class="preload">
+
+		<main class="dictionary-main">
+			<h2 class="dictionary-title">Items to Donate</h2>
+			<button class="add-word">+</button>
+			<ul class="dictionary">
+				<li class="word">
+					<button class="word-button book" data-word="shadow">Book: Harry Potter and the Sorcerer's Stone</button>
+				</li>
+				<li class="word">
+					<button class="word-button excuse-me" data-word="excuse me">
+						Furniture: Big Study Desk 
+					</button>
+				</li>
+				<li class="word">
+					<button class="word-button motivated" data-word="motivated">
+						Little Children Clothes (Ages 6-12)
+					</button>
+				</li>
+				
+				<li class="word">
+					<button class="word-button ring" data-word="ring">Canned Food Can and Items</button>
+				</li>
+				<li class="word">
+					<button class="word-button shout" data-word="shout">Rubber Ducks Pack Toys for Kids</button>
+				</li>
+			</ul>
+			<div class="add-form-wrapper">
+				<div class="form-bg"></div>
+				<h3>Describe the Item you would like to donate!</h3>
+				<button type="button" class="exit-add">X</button>
+				<form class="add-form">
+					<div class="form-pair">
+						<label for="word" class="add-label">Item Name: </label
+						><input required type="text" id="word" class="add-text-field" />
+					</div>
+					<div class="form-pair">
+						<label for="context" class="add-label">Condition, Description, and Location to Pick up: </label
+						><textarea
+							required
+							id="context"
+							class="add-text-field"
+							cols="30"
+							rows="5"
+						></textarea>
+					</div>
+					<div class="form-pair">
+						<label for="language" class="add-label">Quantity </label
+						>
+            <input required type="text" id="language" class="add-text-field" />
+					</div>
+					<button class="submit-add" type="submit">Submit</button>
+				</form>
+			</div>
+			<article class="word-info shadow">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>Harry Potter and the Sorcerer's Stone</h3>
+					<p class="context">
+						<span class="info-title">Item Name:  </span>
+						<span class="context-content"
+							>Book</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Condition, Description, and Location to Pick up: 
+</span>Item is pretty new. It is a really nice book. Location: Palo Alto Park, San Antonio, TX 78211
+					</p>
+					<p class="p-language">
+						<span class="info-title">Quantity: </span>
+						<span class="language-content">1</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Questions for the donator:</span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+				
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			<article class="word-info excuse-me">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>Furniture: Study Desk</h3>
+					<p class="context">
+						<span class="info-title">Item Name: </span>
+						<span class="context-content"
+							>Study Desk</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Condition, Description, and Location to Pick up:
+</span>A well-in-shape furntiure item. It is a study desk with several drawers. Item is sized 150m - 140m. Location: Milmont Dr & Jurgens Dr, 1313 N Milpitas Blvd #159, Milpitas, CA 95035
+					</p>
+					<p class="p-language">
+						<span class="info-title">Quantity: </span>
+						<span class="language-content">1</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Questions for the donator:</span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+				
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			<article class="word-info motivated">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>Little Children Clothes </h3>
+					<p class="context">
+						<span class="info-title">Item Name: </span>Little Children Clothes
+						<span class="context-content"
+							>Clothes for little kids (ages: 6-12)</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Condition, Description, and Location to Pick up:
+ </span> Really pretty clothes; in pretty good shape. Location: Milmont Dr & Jurgens Dr, 1313 N Milpitas Blvd #159, Milpitas, CA 95035
+					</p>
+					<p class="p-language">
+						<span class="info-title">Quantity: </span>
+						<span class="language-content">15</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title"> Questions for the donator: </span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+			
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			
+			<article class="word-info ring">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>Canned Food Products</h3>
+					<p class="context">
+						<span class="info-title">Item Name: </span>
+						<span class="context-content"
+							>Canned Food Products</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Condition, Description, and Location to Pick up: </span>Canned food products for donation. Location: 151 Parsonage Rd, Edison, NJ 08837
+					</p>
+					<p class="p-language">
+						<span class="info-title">Quantity: 12</span>
+						<span class="language-content">English</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Questions for the donator: </span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+				
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+			<article class="word-info shout">
+				<div class="word-info-bg"></div>
+				<div class="word-info-content">
+					<h3>Rubber Ducks Pack</h3>
+					<p class="context">
+						<span class="info-title">Item Name:  </span>
+						<span class="context-content"
+							>Rubber Ducks Pack</span
+						>
+					</p>
+					<p class="c-language">
+						<span class="info-title">Condition, Description, and Location to Pick up:
+ </span>Pack of toys for children to play with Location: Palo Alto Park, San Antonio, TX 78211
+					</p>
+					<p class="p-language">
+						<span class="info-title">Quantity: </span>
+						<span class="language-content">2</span>
+					</p>
+					<section class="definitions">
+						<p class="info-title info-title-hidden">Definition:</p>
+					</section>
+					<form class="add-definition">
+						<label for="definition"
+							><span class="info-title">Questions for the donator: </span></label
+						>
+						<textarea
+							name="definition"
+							id="definition"
+							cols="30"
+							rows="3"
+						></textarea>
+						<button class="submit-definition" type="submit">Submit</button>
+					</form>
+				
+				</div>
+				<button type="button" class="exit-definition">X</button>
+			</article>
+		</main>
+	</body>
+</html>
